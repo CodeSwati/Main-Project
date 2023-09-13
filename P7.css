@@ -1,0 +1,191 @@
+*{
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+}
+
+body{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(https://helios-i.mashable.com/imagery/articles/00JiUKrJOD954qVNhTaMnft/hero-image.fill.size_1248x702.v1681833274.jpg);
+	height: 100vh;
+	width: 100vw;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	margin: 20px 40px;
+	font-family: sans-serif;
+	
+}
+
+nav div i,span{
+	font-size: 20px;
+	font-weight: 700;
+	color: goldenrod;
+
+}
+nav div i{
+	text-align: center;
+	height: 25px;
+	width: 25px;
+	background-color: white;
+	border-radius: 50%;
+}
+
+nav{
+	display: flex;
+
+}
+nav div{
+	margin-right: 60%;
+}
+nav div:hover{
+	cursor: pointer;
+}
+nav ul{
+	display: flex;
+	list-style: none;
+}
+nav ul li a{
+	text-decoration: none;
+	color: black;
+    cursor: pointer;
+    margin-right: 29px;
+    font-weight: 750;
+}
+nav a:hover{
+	color: goldenrod;
+}
+.navbar{
+	display: none;
+}
+
+
+main{
+	margin-top: 80px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+main .arrow1{
+	height: 10px;
+	width: 10px;
+	border: 3px solid goldenrod;
+	border-bottom: none;
+	border-right: none;
+}
+
+
+
+
+main .main{
+	width:60%;
+
+
+}
+main .main h1{
+	font-size: 50px;
+	font-weight:800;
+	color: white;
+	line-height:70px ;
+}
+
+main .main p{
+	font-weight: 700;
+	color: darkgray;
+}
+main img{
+	width: 30vw ;
+	height:75vh;
+	padding-right: 300px;
+	border-radius: 20px ;
+}
+
+main button{
+	margin-top: 30px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 30px;
+	background-color: goldenrod;
+	cursor: pointer;
+	color: white;
+	font-weight: 800;
+	font-size: 16px;
+	margin-right: 300px;
+}
+
+main button:hover{
+	color: black;
+}
+.arro{
+	
+	display: flex;
+}
+main .arrow2{
+	height: 10px;
+	width: 10px;
+	border: 3px solid goldenrod;
+	border-top: none;
+	border-left: none;
+	margin-top: 20px;
+}
+
+@media screen and (max-width:600px){
+	*{
+		overflow: inherit;
+		overflow-x: hidden;
+		
+	}
+	body{
+		background-size:auto;
+		height: 200%;
+width: 100%;
+	}
+	nav ul{
+		display: none;
+	}
+	.navbar{
+		display: block;
+		color: white;
+	}
+	main{
+        margin:30px 10px;
+		display:flex;
+		flex-direction: column;
+	    justify-content: center;
+	   align-items: center;
+	   width: 400px;
+	}
+	main div{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+	}
+	main .main{
+		text-align:center;
+		width:400px;
+
+	}
+	main button{
+		text-align: center ;
+		margin:20px 0;
+		
+	}
+.arrow1, .arrow2{
+	display: none;
+}
+.main p{
+	margin-top: 20px;
+}
+main img{
+	
+	width: 70vw ;
+	height:75vh;
+	padding: 20px;
+	border-radius:30px;
+
+}
+
+}

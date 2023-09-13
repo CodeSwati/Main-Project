@@ -1,0 +1,158 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+
+body{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(https://helios-i.mashable.com/imagery/articles/00JiUKrJOD954qVNhTaMnft/hero-image.fill.size_1248x702.v1681833274.jpg);
+	height: 100vh;
+	width: 100vw;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	margin: 20px 40px;
+	font-family: sans-serif;
+	overflow: hidden;
+}
+
+nav div i,span{
+	font-size: 20px;
+	font-weight: 700;
+	color: goldenrod;
+}
+nav div i{
+	text-align: center;
+	height: 25px;
+	width: 25px;
+	background-color: white;
+	border-radius: 50%;
+}
+
+nav{
+	display: flex;
+
+}
+nav div{
+	margin-right: 60%;
+}
+nav div:hover{
+	cursor: pointer;
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+}
+nav ul li a{
+	text-decoration: none;
+	color: black;
+    cursor: pointer;
+    margin-right: 29px;
+    font-weight: 750;
+}
+nav a:hover{
+	color: goldenrod;
+	}
+.navbar{
+	display: none;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+}
+ main form{
+ 	margin: 20px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 560px;
+	width: 500px;
+	box-shadow: 0 0 10px black;
+}
+main h1{
+	font-weight: 800;
+text-align: center;
+font-size: 40px;
+padding: 0 0 30px;
+}
+
+main div{
+	margin-bottom: 22px;
+}
+
+main label{
+	font-size: 19px;
+	font-weight: 750;
+	color: goldenrod;
+}
+main input{
+	padding: 7px 10px;
+	font-weight: 700;
+	font-size: 13px;
+	border-radius: 40px;
+	border: none;
+	width:370px;
+}
+main textarea{
+	width: 370px ;
+	height: 140px;
+	border-radius: 20px;
+	padding: 7px 10px;
+	font-weight: 730;
+    font-size: 14px;
+}
+
+main button{
+	width: 390px;
+	background-color: goldenrod;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 40px;
+	border: none;
+	font-size: 16px;
+	font-weight: 780;
+	cursor: pointer;
+}
+
+@media screen and (max-width:600px){
+	*{
+		overflow: inherit;
+		overflow-x: hidden;	
+	}
+	body{
+		height: 180%;
+	}
+  nav ul{
+		display: none;
+	}
+	.navbar{
+		display:flex;
+		color: white;
+	}
+	main{
+		width: 400px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+    
+    main h1{
+    	font-size: 33px;
+
+    }
+
+	main form{
+		width: 350px;
+	}
+	main input,main textarea,main button{
+		width: 270px;
+	}
+main textarea{
+	height: 90px;
+}
+	
+}
